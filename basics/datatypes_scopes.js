@@ -5,7 +5,7 @@
 Object (Most Important Derived datatype,Not class-object of oops, Object are key value pairs enclosed in curly braces)
 String,
 Number (int/Bigint ,  float)
-NaN(Not a number -> values which are not null, non-string but are not in regular range of numbers)
+NaN(Not a number -> values which are not null, non-string but are not in regular range of numbers, Basically when string like 'ABC123a49' are explicitly typecasted to Number then it happens)
 null (It is such datatype which is a value of a variable also. Denoting null means 'Empty', But the type of null is 'Object')
 undefined(It is also such datatype which can be a value and its type is undefined, simpley means the variable has no memory existance)
 */
