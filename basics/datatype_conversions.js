@@ -2,8 +2,8 @@
 let varInt = 10 // Number
 let varMixed = "101.89abcd@$" // Number
 let varBool = true
-let varString = "Parthib" // String
 let varDate = new Date() // Object of class Date
+let varString = "Parthib" // String
 const varObj= {
     "name":"Parthib",
     "Roll":27,
