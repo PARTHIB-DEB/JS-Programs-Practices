@@ -21,3 +21,11 @@ const myArr2 = new Array(
 // myArr.fill('static value') // Replacing all of the array values with a static value
 // console.log(myArr);
 
+// Slicing -> Shows the a range of values within the main array WITHOUT CHANGING IT
+// Splicing -> Shows the part of the array by taking that portion out from the main array
+
+// console.log(`Part of the array : ${myArr.slice(1,myArr.length-2)}`)
+// console.log(`Main array after slicing: ${myArr}`)
+const subArr = myArr.splice(1,myArr.length-2) 
+console.log(`Part of the array : ${subArr}`)
+console.log(`Main array after splicing: ${myArr}`)
