@@ -49,7 +49,8 @@ for (const key in myArr) { // keys for arrays are their indexes
     console.log(`${key}:${myArr[key]}`);
 }
 
-//for-each loop (higher-order loop -> arrays,maps)
+//for-each loop (higher-order loop -> arrays,maps) 
+// for-each loop does not return anything or return undefined (EXPLICITLY can return)
 myMap.forEach( function(value){ // call-back function -> function has no name
     console.log(value)
 })
