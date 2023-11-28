@@ -21,4 +21,20 @@
         <p class="bold-font1">THREE</p>
     </h1>
 </body>
+<script>
+    const elem=document.createElement('div')
+    console.log(elem)
+    //elem.className="desc"
+    //or
+    // elem.setAttribute('class','desc')
+    elem.setAttribute('id','intro')
+    elem.style.color="white"
+    elem.style.filter="drop-shadow(1px 1px 12px white)"
+    // elem.innerText = "Parthib"
+    // or
+    const newText=document.createTextNode("Parthib")
+    elem.appendChild(newText)
+    elem.style.fontSize="xxx-large"
+    document.body.appendChild(elem)
+</script>
 </html>
