@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color:black;">
+    <ul class="list" style="filter: drop-shadow(5px 5px 20px white);color:white;">
+        <li style="display:none;"></list>
+    </ul>
+</body>
+<script>
+    function addItem(lang){
+        const listItem=document.createElement('li')
+        listItem.appendChild(document.createTextNode(lang))
+        listItem.style.fontSize="xx-large"
+        listItem.style.marginTop="1rem"
+        document.querySelector('.list').appendChild(listItem)
+    }
+    addItem("Parthib")
+    addItem("Kumar")
+    const item=document.querySelector('li:first-child')
+    const listItem=document.createElement('li')
+    listItem.textContent="DEB"
+    item.replaceWith(listItem)
+</script>
+</html>
