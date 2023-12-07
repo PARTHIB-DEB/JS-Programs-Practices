@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="01_commands.js"></script>
+    <title>Home</title>
+    <style>
+        #one,#two,#three{
+            color:white;
+            filter:drop-shadow(1px 1px 12px white);
+        };
+    </style>
+</head>
+<body style="background-color: black;">
+    <h1 class="Big-Heading" id="Head1">
+        <p class="bold-font1" id="one">ONE</p>
+        <p class="bold-font1" id="two">TWO</p>
+        <p class="bold-font1" id="three">THREE</p>
+    </h1>
+</body>
+<script>
+    // Events are some actions happens due to either keyboard or mouse
+    // There are 3 ways for events : 
+    // 1) Directly inside HTML tag
+    // 2) document.getElementById("").event_name // Not so perfect
+    // 3) document.getElementById("").addEventListener("event_name", function(){} or ()=>{} , false) OR by Queryselector
+    // For 3) the last << false >> parameter is bydefault which makes the eventlistner act for EventBubbling
+    //         EventBubbling --> is basically when we add event to any child element of any parent element then the action also got reflected to its parent element also
+
+    //         If << True >> , then eventlistner act for Reverse-EventBubbling (actually the reverse effect)
+    // document.getElementById("").addEventListener("event_name", function(event_object){
+    //      event_object.stopPropagation() >====> just stop the bubbling process
+    //}
+    //, false)
+    document.querySelector("#one").addEventListener('click',function(){
+        let a=document.getElementById("two")
+        a.style.filter="drop-shadow(0px 0px 2px white)";
+        a.style.color="yellow"
+    })
+    document.querySelector("#two").addEventListener('click',function(){
+        let a=document.getElementById("three")
+        a.style.filter="drop-shadow(0px 0px 0px white)";
+        a.style.color="pink"
+    })
+    document.querySelector("#three").addEventListener('click',function(){
+        let a=document.getElementById("one")
+        a.style.filter="drop-shadow(0px 0px 0px white)";
+        a.style.color="orange"
+    })
+</script>
+</html>
