@@ -6,12 +6,14 @@
     <title>Name change</title>
 </head>
 <body>
-    <h1 id="name"></h1>
+    <h1 id="name">.....</h1>
+    <h1 id="dest">waiting...</h1>
     <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
 <script>
     let myName=document.getElementById("name");
+    let myDest=document.getElementById("dest")
     let inrvlId;
     const startfun=function(){
         if(myName.innerText==="Parthib" || myName.innerText===null)
@@ -25,6 +27,9 @@
     }
     document.querySelector("#start").addEventListener('click',function(){
         inrvlId=setInterval(startfun,1000)
+        setTimeout(()=>{
+            myDest.innerText="Agarpara"
+        },4000)
     })
     document.querySelector("#stop").addEventListener('click',function(){
         clearInterval(inrvlId)
