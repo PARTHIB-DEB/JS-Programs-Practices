@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name change</title>
+</head>
+<body>
+    <h1 id="name"></h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let myName=document.getElementById("name");
+    let inrvlId;
+    const startfun=function(){
+        if(myName.innerText==="Parthib" || myName.innerText===null)
+        {
+            myName.innerText="Deb"
+        }
+        else
+        {
+            myName.innerText="Parthib"
+        }
+    }
+    document.querySelector("#start").addEventListener('click',function(){
+        inrvlId=setInterval(startfun,1000)
+    })
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearInterval(inrvlId)
+    })
+</script>
+</html>
