@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>binding</title>
+</head>
+
+<body>
+    <button>click me</button>
+</body>
+<script>
+    
+/*
+With this method, we can bind an object to a common function, 
+so that the function gives different results when needed.
+otherwise, it gives the same result or gives an error while the code is executing
+*/
+    class btn {
+        constructor() {
+            this.name = "submit",
+                this.server = "http://localhost:3000/"
+            document.querySelector("button").addEventListener("click", this.actionOnclick.bind(this))
+        }  // Binding the object wirth current object btn()
+
+        actionOnclick() {
+            console.log("Btn got clicked")
+            console.log(this)
+        }
+    }
+    const obj = new btn()
+</script>
+
+</html>
