@@ -16,7 +16,7 @@ class person{
         console.log(`Getter called  : Username is ${this._username}\n\n`)
     }
 
-    set username(username){  // More priority because first it get called before constructor function
+    set username(username){  // More priority because first it is called before constructor function
         this._username=username.toUpperCase()+"1234"
         console.log(`Setter Function called , username set to ${this._username}\n\n`)
     }
