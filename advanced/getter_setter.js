@@ -25,3 +25,6 @@ class person{
 
 const pepObj=new person("parthib","pkd@pkd.com")
 pepObj.username
+
+
+// For more 2 methods see hitesh sir's video : https://youtu.be/t6vLhF-iSxQ?si=bOMJYhhNGVWeCu8V
